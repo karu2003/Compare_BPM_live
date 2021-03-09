@@ -19,11 +19,11 @@ class Audio_plots:
         ax[0].set_xlim(0,512)
         ax[0].set_ylim(0,1)
         ax[0].set_title("Correlation Librosa")
-        # Plot 1 is for the correlation WDT
+        # Plot 1 is for the correlation DWT
         self.li2, = ax[1].plot(x, y)
         ax[1].set_xlim(0,1250)
         ax[1].set_ylim(0,32768)
-        ax[1].set_title("Correlation WDT")
+        ax[1].set_title("Correlation DWT")
 
         plt.tight_layout()
 
@@ -64,7 +64,7 @@ if __name__ == "__main__":
     audio = Audio_plots()
     bpms = BPM_Analyzer()
     # print(sd.query_devices())
-    print('{0:<20} {1:<14}'.format('BPM wdt','BPM librosa') )
+    print('{0:<20} {1:<14}'.format('BPM dwt','BPM librosa') )
     while True:
         try:
             main()
