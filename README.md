@@ -1,4 +1,4 @@
-# BPM counting test for astro Montierung Mini Track LX3
+# BPM counting test for Telescope mount Mini Track LX3
 Used a standard microphone. Tested on RPi 3. :) 
 
 # References:
