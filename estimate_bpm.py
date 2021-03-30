@@ -79,8 +79,8 @@ class BPM_Analyzer:
         """
         # 0) Extract DWTs
         # We're going to need the high frequency decomposition (dCs)
-        dCs = self.wavedec_n(data)
-        # dCs, aCs = self.extractDWTCoefficients(data, self.levels)
+        # dCs = self.wavedec_n(data)
+        dCs, aCs = self.extractDWTCoefficients(data, self.levels)
  
         # 0.5 ) Extract relevant variables
         # This will be useful later for downsampling and calculating the final bpm
